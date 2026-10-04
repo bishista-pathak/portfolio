@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7f5;
+    color: #333333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #2f6f68;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #2f6f68;
+}
+
+/* About section */
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+#skills dl {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+}
+
+#skills dt {
+    font-weight: bold;
+    color: #2f6f68;
+}
+
+/* Projects */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+article {
+    background-color: #f2f7f5;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+article h3 {
+    color: #2f6f68;
+}
+
+article a {
+    background-color: #2f6f68;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+article a:hover {
+    background-color: #24544f;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2f6f68;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #24544f;
+}
+
+/* Footer */
+footer {
+    background-color: #24544f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    #skills dl {
+        grid-template-columns: 1fr;
+    }
+
+    #about img {
+        width: 150px;
+        height: 150px;
+    }
+}
